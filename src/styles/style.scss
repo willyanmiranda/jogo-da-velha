@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 79, 79);
+  }
+  
+#container {
+    width: 600px;
+    height: 600px;
+}
+
+#box {
+    width: 50px;
+    height: 200px;
+
+    &:hover {
+      background: #f6f6f6;
+      cursor: pointer;
+    }
+}
+
+#horizontal {
+    width: 600px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    z-index: 100;
+}
+
+#vertical {
+  width: 200px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  z-index: 100;
+  rotate: 90deg;
+}
+
+#diagonal1 {
+  width: 300px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  z-index: 100;
+  rotate: 45deg;
+}
+
+#diagonal2 {
+  width: 300px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  z-index: 100;
+  rotate: 135deg;
+}
+
+#mark {
+    font-size: 100px;
+}
